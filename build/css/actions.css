@@ -24,6 +24,7 @@ table.actions-wrapper td {
       background-color: rgba(255, 205, 0, 0.2); }
   .actions a {
     display: block;
+    color: #000000;
     text-decoration: none; }
     .actions a:hover {
       cursor: url("../img/hand-cursor.png"), pointer; }

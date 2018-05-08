@@ -27,10 +27,6 @@ gulp.task('styles', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('clean', function () {
-    return del.sync('build'); // Удаляем папку перед сборкой
-});
-
 gulp.task('inject', function () {
     return gulp.src('src/aktsii/index.html')
         .pipe(rigger())
@@ -49,8 +45,12 @@ gulp.task('replace', function () {
         .pipe(gulp.dest('build/'));
 });
 
+gulp.task('clean', function () {
+    return del.sync('build'); // Удаляем папку перед сборкой
+});
+
 gulp.task('build', function () {
-    var buildHtml = gulp.src(['src/aktsii/*', '!index.html'])
+    var buildHtml = gulp.src(['!src/aktsii/index.html', 'src/aktsii/*'])
         .pipe(gulp.dest('build/aktsii'));
 
     var buildCss = gulp.src('src/css/*')

@@ -1,0 +1,21 @@
+{
+  "name": "rtds.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "k.dubov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1"
+  }
+}

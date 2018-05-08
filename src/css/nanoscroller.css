@@ -1,0 +1,84 @@
+/** initial setup **/
+
+.nano {
+  position: absolute;
+  height: 169px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nano>.nano-content {
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8;
+}
+
+.nano>.nano-content:focus {
+  outline: thin dotted;
+}
+
+.nano>.nano-content::-webkit-scrollbar {
+  display: none;
+}
+
+.has-scrollbar>.nano-content::-webkit-scrollbar {
+  display: block;
+}
+
+.nano>.nano-pane {
+  background: #ededed;
+  position: absolute;
+  width: 12px;
+  right: 0;
+  top: 2px;
+  bottom: 0;
+  visibility: hidden\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: .01;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nano>.nano-pane>.nano-slider {
+  background: #7b7b7b;
+  position: relative;
+  margin: 0 1px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.nano>.nano-pane>.nano-slider:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 6px;
+  background: url('../img/nano-slider-elem.png') center no-repeat;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.nano:hover>.nano-pane,
+.nano-pane.active,
+.nano-pane.flashed {
+  visibility: visible\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: 0.99;
+}
+
+.nano .nano-slider {
+  background: #111;
+}

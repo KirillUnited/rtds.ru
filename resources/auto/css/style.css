@@ -1,0 +1,13 @@
+.models-link {
+	margin-top: 15px;
+	text-align: center;
+	display: inline-block;
+}
+
+.models-img {
+	width: 120px;
+}
+
+.models-img img {
+	width: 100%;
+}

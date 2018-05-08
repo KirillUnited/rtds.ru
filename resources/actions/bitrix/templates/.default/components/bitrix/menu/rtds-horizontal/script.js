@@ -1,0 +1,1 @@
+BX.ready(function(){jQuery('li.first').hover();jQuery('.submenu_open._submenu_open').hover(function(){},function(){});jQuery('#horizontal-multilevel-menu>li').hover(function(){console.log('s1');console.log($(this).children('ul'));$(this).children('ul').css('display','block');},function(){console.log('s2');$(this).children('ul').css('display','none');});});

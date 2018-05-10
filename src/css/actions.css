@@ -83,6 +83,7 @@ table.actions-wrapper td {
   .actions .list__item {
     display: inline-block;
     width: 366px;
+    height: 475px;
     margin-bottom: 25px; }
     .actions .list__item:nth-of-type(2n+1) {
       margin-right: 17px; }

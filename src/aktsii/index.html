@@ -16,7 +16,80 @@
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script type="text/javascript" data-skip-moving="true">(function (w, d, n) { var cl = "bx-core"; var ht = d.documentElement; var htc = ht ? ht.className : undefined; if (htc === undefined || htc.indexOf(cl) !== -1) { return; } var ua = n.userAgent; if (/(iPad;)|(iPhone;)/i.test(ua)) { cl += " bx-ios"; } else if (/Android/i.test(ua)) { cl += " bx-android"; } cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch"); cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina"; var ieVersion = -1; if (/AppleWebKit/.test(ua)) { cl += " bx-chrome"; } else if ((ieVersion = getIeVersion()) > 0) { cl += " bx-ie bx-ie" + ieVersion; if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) { cl += " bx-quirks"; } } else if (/Opera/.test(ua)) { cl += " bx-opera"; } else if (/Gecko/.test(ua)) { cl += " bx-firefox"; } if (/Macintosh/i.test(ua)) { cl += " bx-mac"; } ht.className = htc ? htc + " " + cl : cl; function isDoctype() { if (d.compatMode) { return d.compatMode == "CSS1Compat"; } return d.documentElement && d.documentElement.clientHeight; } function getIeVersion() { if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) { return -1; } var rv = -1; if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) { rv = 11; } else if (!!d.documentMode && d.documentMode >= 10) { rv = 10; } else if (!!d.documentMode && d.documentMode >= 9) { rv = 9; } else if (d.attachEvent && !/Opera/.test(ua)) { rv = 8; } if (rv == -1 || rv == 8) { var re; if (n.appName == "Microsoft Internet Explorer") { re = new RegExp("MSIE ([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } else if (n.appName == "Netscape") { rv = 11; re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } } return rv; } })(window, document, navigator);</script>
+    <script type="text/javascript" data-skip-moving="true">
+        (function (w, d, n) {
+            var cl = "bx-core";
+            var ht = d.documentElement;
+            var htc = ht ? ht.className : undefined;
+            if (htc === undefined || htc.indexOf(cl) !== -1) {
+                return;
+            }
+            var ua = n.userAgent;
+            if (/(iPad;)|(iPhone;)/i.test(ua)) {
+                cl += " bx-ios";
+            } else if (/Android/i.test(ua)) {
+                cl += " bx-android";
+            }
+            cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");
+            cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina";
+            var ieVersion = -1;
+            if (/AppleWebKit/.test(ua)) {
+                cl += " bx-chrome";
+            } else if ((ieVersion = getIeVersion()) > 0) {
+                cl += " bx-ie bx-ie" + ieVersion;
+                if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) {
+                    cl += " bx-quirks";
+                }
+            } else if (/Opera/.test(ua)) {
+                cl += " bx-opera";
+            } else if (/Gecko/.test(ua)) {
+                cl += " bx-firefox";
+            }
+            if (/Macintosh/i.test(ua)) {
+                cl += " bx-mac";
+            }
+            ht.className = htc ? htc + " " + cl : cl;
+
+            function isDoctype() {
+                if (d.compatMode) {
+                    return d.compatMode == "CSS1Compat";
+                }
+                return d.documentElement && d.documentElement.clientHeight;
+            }
+
+            function getIeVersion() {
+                if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) {
+                    return -1;
+                }
+                var rv = -1;
+                if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) {
+                    rv = 11;
+                } else if (!!d.documentMode && d.documentMode >= 10) {
+                    rv = 10;
+                } else if (!!d.documentMode && d.documentMode >= 9) {
+                    rv = 9;
+                } else if (d.attachEvent && !/Opera/.test(ua)) {
+                    rv = 8;
+                }
+                if (rv == -1 || rv == 8) {
+                    var re;
+                    if (n.appName == "Microsoft Internet Explorer") {
+                        re = new RegExp("MSIE ([0-9]+[\.0-9]*)");
+                        if (re.exec(ua) != null) {
+                            rv = parseFloat(RegExp.$1);
+                        }
+                    } else if (n.appName == "Netscape") {
+                        rv = 11;
+                        re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");
+                        if (re.exec(ua) != null) {
+                            rv = parseFloat(RegExp.$1);
+                        }
+                    }
+                }
+                return rv;
+            }
+        })(window, document, navigator);
+    </script>
 
 
     <link href="../bitrix/cache/css/s1/rtds-renault/kernel_main/kernel_mainfb3a.css?152448590629010" type="text/css" rel="stylesheet"
@@ -292,8 +365,7 @@
 
                     <noindex>
                         <div>
-                            <a href="https://www.rtds.ru/company/news/43825/" alt="Летние сервисные предложения для владельцев Renault"
-                                title="лучший Renault">
+                            <a href="https://www.rtds.ru/company/news/43825/" alt="Летние сервисные предложения для владельцев Renault" title="лучший Renault">
                                 <img src="../upload/medialibrary/64e/rtdsbanner.png">
                             </a>
                         </div>
@@ -301,14 +373,13 @@
                         <div class="service-banner-3" style="margin: 10px 0px;">
                             <object height="130" width="185">
                                 <a href="https://www.rtds.ru/service/actions/31599/">
-                                    <img alt="Специальные предложения по программе «Сервис 4+»" title="Специальные предложения по программе «Сервис 4+»"
-                                        src="../images/vigoda.jpg" width="185" height="130" style="border:0;"> </a>
+                                    <img alt="Специальные предложения по программе «Сервис 4+»" title="Специальные предложения по программе «Сервис 4+»" src="../images/vigoda.jpg"
+                                        width="185" height="130" style="border:0;"> </a>
                             </object>
                         </div>
                         <div class="service-banner-3" style="margin: 10px 0px;">
                             <a href="https://www.rtds.ru/service/actions/19094/">
-                                <img width="185" alt="Программа Renault Assistance Plus" src="../images/news/renault_assistance_plus.jpg"
-                                    height="130" border="0"> </a>
+                                <img width="185" alt="Программа Renault Assistance Plus" src="../images/news/renault_assistance_plus.jpg" height="130" border="0"> </a>
                         </div>
                         <!--<div class="service-banner-3" style="margin: 10px 0px;">
  <a href="/service/actions/36319/"> <img width="185" alt="ГРМ_МСК.jpg" src="/upload/medialibrary/c9a/ГРМ_МСК.jpg" height="130" title="ГРМ_МСК.jpg" border="0"> </a>
@@ -324,65 +395,115 @@
                         <tbody>
                             <tr>
                                 <td valign="top" colspan="2">
-//= ../template/actions-tmpl.html
+                                    //= ../template/actions-tmpl.html
 
-                        <div class="clear"></div>
-                        </div>
-                        </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <span class="article_seperator"></span>
+                                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-            </div>
-            <table class="sitemap">
-                <tbody>
-                   <tr>
-                      <td>
-                         <p class="h4">Модельный ряд</p>
-                         <strong>Легковые:</strong> <br>
-                         <a href="https://www.rtds.ru/auto/cars-renault/duster/">DUSTER</a>
-                         | <a href="https://www.rtds.ru/auto/cars-renault/sandero/">SANDERO</a>
-                         | <a href="https://www.rtds.ru/auto/cars-renault/sandero-stepway/">SANDERO STEPWAY</a>
-                         | <a href="https://www.rtds.ru/auto/cars-renault/logan/">LOGAN</a>
-                         | <a href="https://www.rtds.ru/auto/cars-renault/koleos-2017/">KOLEOS</a>
-                         | <a href="https://www.rtds.ru/auto/cars-renault/dokker/">DOKKER</a> <br>
-                         <br>
-                         <noindex><strong>Коммерческие:</strong> <br>
-                         <a href="https://www.rtds.ru/auto/commercial-transport/master/">MASTER</a>
-                         | <a href="https://www.rtds.ru/auto/commercial-transport/master-chassis/">MASTER
-                         ШАССИ</a><!-- | <a
-                            href="/auto/commercial-transport/kangoo-fourgon/">KANGOO
-                         FOURGON</a> -->
-             </noindex>
-                      </td>
-                   </tr>
-                   <tr>
-                      <td>
-                         <p class="h4">Услуги дилерского центра RTDService</p>
-                         <a class="h4 icon-set__services" href="https://www.rtds.ru/service/">Сервиc</a>
-                         | 
-                         <a class="h4 icon-set__credit-auto" href="https://www.rtds.ru/credit/">Кредит</a>
-                         | 
-                         <a class="h4 icon-set__speedometer" href="https://www.rtds.ru/renault-run/">Renault с пробегом</a>
-                         | 
-                         <a class="h4 icon-set__trade-in" href="https://www.rtds.ru/trade-in/">Trade-In</a>
-                         |
-                         <a class="h4 icon-set__insurance" href="https://www.rtds.ru/insurance/">Автострахование</a>
-                      </td>
-                   </tr>
+                </td>
+                </tr>
                 </tbody>
-             </table>
-            </table>
-
-            <div class="old_footer">
-
-
-                <p></p>
+                </table>
+                <span class="article_seperator"></span>
             </div>
-
+            <div class="clear"></div>
         </div>
+        <table class="sitemap">
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="h4">Модельный ряд</p>
+                        <strong>Легковые:</strong>
+                        <br>
+
+                        <a class="models-link" href="/auto/cars-renault/duster/">
+                            <div>DUSTER</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/Duster.png">
+                            </div>
+                        </a>
+                        <a class="models-link" href="/auto/cars-renault/sandero/">
+                            <div>SANDERO</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/sanndero.png">
+                            </div>
+                        </a>
+                        <a class="models-link" href="/auto/cars-renault/sandero-stepway/">
+                            <div>SANDERO STEPWAY</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/SS.png">
+                            </div>
+                        </a>
+                        <a class="models-link" href="/auto/cars-renault/logan/">
+                            <div>LOGAN</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/Logan.png">
+                            </div>
+                        </a>
+                        <a class="models-link" href="/auto/cars-renault/koleos-2017/">
+                            <div>KOLEOS</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/Koleos.png">
+                            </div>
+                        </a>
+                        <a class="models-link" href="/auto/cars-renault/dokker/">
+                            <div>DOKKER</div>
+                            <div class="models-img">
+                                <img src="../images/auto-img/dokker.png">
+                            </div>
+                        </a>
+
+                        <br>
+                        <br>
+                        <noindex>
+                            <strong>Коммерческие:</strong>
+                            <br>
+                            <a class="models-link" href="/auto/commercial-transport/master/">
+                                <div>MASTER</div>
+                                <div class="models-img">
+                                    <img src="../images/auto-img/master_black_pearl.jpg">
+                                </div>
+                            </a>
+                            <a class="models-link" href="/auto/commercial-transport/master-chassis/">
+                                <div>MASTER ШАССИ</div>
+                                <div class="models-img">
+                                    <img src="../images/auto-img/master_chassis_silver.jpg">
+                                </div>
+                            </a>
+                        </noindex>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="h4">Услуги дилерского центра RTDService</p>
+                        <a class="h4 icon-set__services" href="/service/">Сервиc</a>
+                        |
+                        <a class="h4 icon-set__credit-auto" href="/credit/">Кредит</a>
+                        |
+                        <a class="h4 icon-set__speedometer" href="/renault-run/">Renault с пробегом</a>
+                        |
+                        <a class="h4 icon-set__trade-in" href="/trade-in/">Trade-In</a>
+                        |
+                        <a class="h4 icon-set__insurance" href="/insurance/">Автострахование</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            .models-link {
+                margin-top: 15px;
+                text-align: center;
+                display: inline-block;
+            }
+        </style>
+        </table>
+
+        <div class="old_footer">
+
+
+            <p></p>
+        </div>
+
+    </div>
     </div>
 
     <div class="footer footer_black_bg">
@@ -578,8 +699,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -627,8 +747,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -703,8 +822,8 @@
                                             Желаемая дата и время записи:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 15-16 ноября 2016 г, утром" style="width: 100%;"
-                                                name="form_text_69" value="" size="12" />
+                                            <input type="text" placeholder="Например, 15-16 ноября 2016 г, утром" style="width: 100%;" name="form_text_69" value="" size="12"
+                                            />
                                         </td>
                                     </tr>
 
@@ -714,8 +833,7 @@
                                             Имя и Фамилия:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Владимир" style="width: 100%;" name="form_text_67"
-                                                value="" size="50" />
+                                            <input type="text" placeholder="Например, Владимир" style="width: 100%;" name="form_text_67" value="" size="50" />
                                         </td>
                                     </tr>
 
@@ -725,15 +843,14 @@
                                             Телефон:
                                         </td>
                                         <td>
-                                            <input type="text" required placeholder="Например, +79161234567" style="width: 100%;"
-                                                name="form_text_68" value="" size="50" />
+                                            <input type="text" required placeholder="Например, +79161234567" style="width: 100%;" name="form_text_68" value="" size="50"
+                                            />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -772,8 +889,7 @@
                                             Гос. номер:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, а111аа11" style="width:100%;" name="form_text_95"
-                                                value="" size="10" />
+                                            <input type="text" placeholder="Например, а111аа11" style="width:100%;" name="form_text_95" value="" size="10" />
                                         </td>
                                     </tr>
 
@@ -783,8 +899,7 @@
                                             Пробег:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 5 000 км" style="width:100%;" name="form_text_96"
-                                                value="" size="30" />
+                                            <input type="text" placeholder="Например, 5 000 км" style="width:100%;" name="form_text_96" value="" size="30" />
                                         </td>
                                     </tr>
 
@@ -875,8 +990,7 @@
                                             В каком дилерском центре приобретали автомобиль:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, RTDS на Обручева" style="width:100%;" name="form_text_120"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, RTDS на Обручева" style="width:100%;" name="form_text_120" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -895,16 +1009,14 @@
                                             E-mail:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="example@example.ru" style="width:100%;" name="form_email_498"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="example@example.ru" style="width:100%;" name="form_email_498" value="" size="0" />
                                         </td>
                                     </tr>
                                     <tr class="name-col e-mail" style="display:none;">
                                         <td></td>
                                         <td>
                                             <div style="display:block;font-size:12px;line-height:17px;">
-                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage"
-                                                    checked="checked">
+                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage" checked="checked">
                                                 <label for="agree_personaldata_usage" style="vertical-align:top;">Подписаться на рассылку</label>
                                                 <p style="font-size:80%">Отправляя запрос, Вы соглашаетесь с
                                                     <a href="https://www.rtds.ru/hotline/privacy_policy/">условиями использования персональных данных</a>
@@ -932,8 +1044,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_service"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_service" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -1029,8 +1140,7 @@
                                             Имя и фамилия:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_545"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_545" value="" size="0" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -1038,15 +1148,14 @@
                                             Телефон:
                                         </td>
                                         <td>
-                                            <input type="text" required placeholder="Например, +79161234567" style="width:100%"
-                                                name="form_text_546" value="" size="0" />
+                                            <input type="text" required placeholder="Например, +79161234567" style="width:100%" name="form_text_546" value="" size="0"
+                                            />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -1057,16 +1166,14 @@
                                             E-mail:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="example@example.ru" style="width:100%" name="form_email_547"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="example@example.ru" style="width:100%" name="form_email_547" value="" size="0" />
                                         </td>
                                     </tr>
                                     <tr class="name-col e-mail" style="display:none;">
                                         <td></td>
                                         <td>
                                             <div style="display:block;font-size:12px;line-height:17px;">
-                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage"
-                                                    checked="checked">
+                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage" checked="checked">
                                                 <label for="agree_personaldata_usage" style="vertical-align:top;">Подписаться на рассылку</label>
                                                 <p style="font-size:80%">Отправляя запрос, Вы соглашаетесь с
                                                     <a href="https://www.rtds.ru/hotline/privacy_policy/">условиями использования персональных данных</a>
@@ -1094,8 +1201,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_car_order2"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_car_order2" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -1185,8 +1291,7 @@
                                         Комментарий:
                                     </td>
                                     <td>
-                                        <textarea name="form_textarea_554" cols="40" rows="5" placeholder="Хочу воспользоваться акцией и программой Trade-in"
-                                            style="width:100%"></textarea>
+                                        <textarea name="form_textarea_554" cols="40" rows="5" placeholder="Хочу воспользоваться акцией и программой Trade-in" style="width:100%"></textarea>
                                     </td>
                                 </tr>
 
@@ -1195,8 +1300,7 @@
                                         Имя и Фамилия:
                                     </td>
                                     <td>
-                                        <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_303"
-                                            value="" size="50" />
+                                        <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_303" value="" size="50" />
                                     </td>
                                 </tr>
 
@@ -1205,16 +1309,15 @@
                                         Телефон:
                                     </td>
                                     <td>
-                                        <input type="text" required placeholder="Например, +79161234567" style="width:100%" name="form_text_304"
-                                            value="" size="50" />
+                                        <input type="text" required placeholder="Например, +79161234567" style="width:100%" name="form_text_304" value="" size="50"
+                                        />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2">
                                         <p align="center">
-                                            <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                onClick="$('.e-mail').toggle();">
+                                            <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                 Хочу ускорить обработку заявки и ввести дополнительные данные
                                             </a>
                                         </p>
@@ -1226,16 +1329,14 @@
                                         E-mail:
                                     </td>
                                     <td>
-                                        <input type="text" placeholder="example@example.ru" style="width:100%" name="form_email_503"
-                                            value="" size="0" />
+                                        <input type="text" placeholder="example@example.ru" style="width:100%" name="form_email_503" value="" size="0" />
                                     </td>
                                 </tr>
                                 <tr class="name-col e-mail" style="display:none;">
                                     <td></td>
                                     <td>
                                         <div style="display:block;font-size:12px;line-height:17px;">
-                                            <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage"
-                                                checked="checked">
+                                            <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage" checked="checked">
                                             <label for="agree_personaldata_usage" style="vertical-align:top;">Подписаться на рассылку</label>
                                             <p style="font-size:80%">Отправляя запрос, Вы соглашаетесь с
                                                 <a href="https://www.rtds.ru/hotline/privacy_policy/">условиями использования персональных данных</a>
@@ -1270,8 +1371,8 @@
                                     <td>&nbsp;</td>
                                     <td>
                                         <input type="hidden" name="captcha_sid" value="094e9871247cf856bb289d5ab8812509" />
-                                        <img src="https://www.rtds.ru/bitrix/tools/captcha.php?captcha_sid=094e9871247cf856bb289d5ab8812509"
-                                            width="180" height="40" />
+                                        <img src="https://www.rtds.ru/bitrix/tools/captcha.php?captcha_sid=094e9871247cf856bb289d5ab8812509" width="180" height="40"
+                                        />
                                     </td>
                                 </tr>
                                 <tr>
@@ -1281,15 +1382,13 @@
                                         </font>
                                     </td>
                                     <td>
-                                        <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext"
-                                        />
+                                        <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext" />
                                     </td>
                                 </tr>
                                 <tfoot>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_credit"
-                                                checked />
+                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_credit" checked />
                                         </td>
                                         <td>
                                             <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -1348,8 +1447,7 @@
                                             Марка автомобиля:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Renault" style="width:100%;" name="form_text_407"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, Renault" style="width:100%;" name="form_text_407" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1359,8 +1457,7 @@
                                             Модель:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Duster" style="width:100%;" name="form_text_386"
-                                                value="" size="50" />
+                                            <input type="text" placeholder="Например, Duster" style="width:100%;" name="form_text_386" value="" size="50" />
                                         </td>
                                     </tr>
 
@@ -1385,8 +1482,7 @@
                                             Имя и Фамилия:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_355"
-                                                value="" size="50" />
+                                            <input type="text" placeholder="Например, Иванов Иван" style="width:100%" name="form_text_355" value="" size="50" />
                                         </td>
                                     </tr>
 
@@ -1396,15 +1492,14 @@
                                             Телефон:
                                         </td>
                                         <td>
-                                            <input type="text" required placeholder="Например, +79161234567" style="width:100%;"
-                                                name="form_text_356" value="" size="50" />
+                                            <input type="text" required placeholder="Например, +79161234567" style="width:100%;" name="form_text_356" value="" size="50"
+                                            />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(o);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -1442,8 +1537,7 @@
                                             Цвет автомобиля:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, Чёрный металлик" style="width:100%;" name="form_text_408"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, Чёрный металлик" style="width:100%;" name="form_text_408" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1453,8 +1547,7 @@
                                             Объем двигателя:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 1.6" style="width:100%;" name="form_text_409"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, 1.6" style="width:100%;" name="form_text_409" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1464,8 +1557,7 @@
                                             Тип двигателя:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, дизель" style="width:100%;" name="form_text_410"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, дизель" style="width:100%;" name="form_text_410" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1475,8 +1567,7 @@
                                             Коробка передач:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, МКПП" style="width:100%;" name="form_text_411"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, МКПП" style="width:100%;" name="form_text_411" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1486,8 +1577,7 @@
                                             Тип кузова:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, седан" style="width:100%;" name="form_text_412"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, седан" style="width:100%;" name="form_text_412" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1497,8 +1587,7 @@
                                             Год выпуска:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 2010" style="width:100%;" name="form_text_413"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, 2010" style="width:100%;" name="form_text_413" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1508,8 +1597,7 @@
                                             Пробег:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 20 000 км" style="width:100%;" name="form_text_388"
-                                                value="" size="30" />
+                                            <input type="text" placeholder="Например, 20 000 км" style="width:100%;" name="form_text_388" value="" size="30" />
                                         </td>
                                     </tr>
 
@@ -1519,8 +1607,7 @@
                                             Ожидаемая цена продажи:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="Например, 500 000 р." style="width:100%;" name="form_text_414"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="Например, 500 000 р." style="width:100%;" name="form_text_414" value="" size="0" />
                                         </td>
                                     </tr>
 
@@ -1648,8 +1735,7 @@
                                             Опишите неисправности автомобиля:
                                         </td>
                                         <td>
-                                            <textarea name="form_textarea_437" cols="40" rows="5" placeholder="Например, Гремит двигатель"
-                                                style="width: 100%;"></textarea>
+                                            <textarea name="form_textarea_437" cols="40" rows="5" placeholder="Например, Гремит двигатель" style="width: 100%;"></textarea>
                                         </td>
                                     </tr>
 
@@ -1659,8 +1745,7 @@
                                             Дополнительная информация, которую Вы хотели бы нам сообщить:
                                         </td>
                                         <td>
-                                            <textarea name="form_textarea_403" cols="40" rows="5" placeholder="Например, Хочу участвовать в акции"
-                                                style="width: 100%;"></textarea>
+                                            <textarea name="form_textarea_403" cols="40" rows="5" placeholder="Например, Хочу участвовать в акции" style="width: 100%;"></textarea>
                                         </td>
                                     </tr>
 
@@ -1669,16 +1754,14 @@
                                             E-mail:
                                         </td>
                                         <td>
-                                            <input type="text" placeholder="example@example.ru" style="width:100%;" name="form_email_504"
-                                                value="" size="0" />
+                                            <input type="text" placeholder="example@example.ru" style="width:100%;" name="form_email_504" value="" size="0" />
                                         </td>
                                     </tr>
                                     <tr class="name-col e-mail" style="display:none;">
                                         <td></td>
                                         <td>
                                             <div style="display:block;font-size:12px;line-height:17px;">
-                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage"
-                                                    checked="checked">
+                                                <input type="checkbox" value="Y" name="agree_personaldata_usage" id="agree_personaldata_usage" checked="checked">
                                                 <label for="agree_personaldata_usage" style="vertical-align:top;">Подписаться на рассылку</label>
                                                 <p style="font-size:80%">Отправляя запрос, Вы соглашаетесь с
                                                     <a href="https://www.rtds.ru/hotline/privacy_policy/">условиями использования персональных данных</a>
@@ -1706,14 +1789,12 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_assessment"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_assessment" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
                                                     и получение рекламы. С
-                                                    <a href="https://www.rtds.ru/include/terms_of_use.php"
-                                                        class="fancy_page">условиями обработки персональных данных и получения рекламы</a>, изложенными
+                                                    <a href="https://www.rtds.ru/include/terms_of_use.php" class="fancy_page">условиями обработки персональных данных и получения рекламы</a>, изложенными
                                                     на сайте rtds.ru — ознакомлен и согласен.</p>
                                             </td>
                                             <!--<td><p style="font-size: 12px">Нажав кнопку "Отправить", я даю свое согласие <a href="/include/terms_of_use.php" class="fancy_page">на обработку персональных данных</a></p></td> -->
@@ -1778,7 +1859,8 @@
                                         Текст сообщения:
                                     </td>
                                     <td>
-                                        <textarea name="form_textarea_446" cols="40" rows="5" style="width:293px;"></textarea> </td>
+                                        <textarea name="form_textarea_446" cols="40" rows="5" style="width:293px;"></textarea>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="name-col">
@@ -1821,8 +1903,7 @@
                                 <tfoot>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback"
-                                                checked />
+                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback" checked />
                                         </td>
                                         <td>
                                             <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -1932,7 +2013,8 @@
                                         Текст сообщения:
                                     </td>
                                     <td>
-                                        <textarea name="form_textarea_836" cols="40" rows="5" style="width:293px;">Хочу узнать максимальную выгоду на модель</textarea> </td>
+                                        <textarea name="form_textarea_836" cols="40" rows="5" style="width:293px;">Хочу узнать максимальную выгоду на модель</textarea>
+                                    </td>
                                 </tr>
                                 <tr style="display: none">
                                     <td class="name-col">
@@ -1953,8 +2035,7 @@
                                 <tfoot>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_max_benefits"
-                                                checked />
+                                            <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_max_benefits" checked />
                                         </td>
                                         <td>
                                             <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -2044,8 +2125,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -2091,8 +2171,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback_X5X2L"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback_X5X2L" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -2178,8 +2257,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <p align="center">
-                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;"
-                                                    onClick="$('.e-mail').toggle();">
+                                                <a href="javascript:void(0);" style="border-bottom: 1px dashed #000;text-decoration: none;" onClick="$('.e-mail').toggle();">
                                                     Хочу ускорить обработку заявки и ввести дополнительные данные
                                                 </a>
                                             </p>
@@ -2225,8 +2303,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback_X5X2L_St2FY"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_callback_X5X2L_St2FY" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -2347,8 +2424,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback_tjg3T"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback_tjg3T" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -2469,8 +2545,7 @@
                                     <tfoot>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback_Bgwf8"
-                                                    checked />
+                                                <input type="checkbox" style="float: right; margin-right: 15px" class="i_agree_tou_feedback_Bgwf8" checked />
                                             </td>
                                             <td>
                                                 <p style="font-size: 12px; margin: 0">Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных
@@ -2502,59 +2577,182 @@
         </div>
         <!--'end_frame_cache_include-block'-->
     </div>
-    <script type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i]; return true; };</script>
-    <script type="text/javascript">(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });</script>
-    <script type="text/javascript">(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1525346410', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': '6ad1858f2ce509394aa5448730cfa4ec' });</script>
+    <script type="text/javascript">
+        if (!window.BX) window.BX = {};
+        if (!window.BX.message) window.BX.message = function (mess) {
+            if (typeof mess == 'object')
+                for (var i in mess) BX.message[i] = mess[i];
+            return true;
+        };
+    </script>
+    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'JS_CORE_LOADING': 'Загрузка...',
+            'JS_CORE_NO_DATA': '- Нет данных -',
+            'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+            'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+            'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+            'JS_CORE_WINDOW_SAVE': 'Сохранить',
+            'JS_CORE_WINDOW_CANCEL': 'Отменить',
+            'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+            'JS_CORE_H': 'ч',
+            'JS_CORE_M': 'м',
+            'JS_CORE_S': 'с',
+            'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+            'JSADM_AI_ALL_NOTIF': 'Показать все',
+            'JSADM_AUTH_REQ': 'Требуется авторизация!',
+            'JS_CORE_WINDOW_AUTH': 'Войти',
+            'JS_CORE_IMAGE_FULL': 'Полный размер'
+        });
+    </script>
+    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'LANGUAGE_ID': 'ru',
+            'FORMAT_DATE': 'DD.MM.YYYY',
+            'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+            'COOKIE_PREFIX': 'BITRIX_SM',
+            'SERVER_TZ_OFFSET': '10800',
+            'SITE_ID': 's1',
+            'SITE_DIR': '/',
+            'USER_ID': '',
+            'SERVER_TIME': '1525346410',
+            'USER_TZ_OFFSET': '0',
+            'USER_TZ_AUTO': 'Y',
+            'bitrix_sessid': '6ad1858f2ce509394aa5448730cfa4ec'
+        });
+    </script>
     <script type="text/javascript" src="../bitrix/cache/js/s1/rtds-renault/kernel_main/kernel_main7fe0.js?1524485906428885"></script>
     <script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js', '../bitrix/js/main/core/core_ajax.js', '../bitrix/js/main/json/json2.min.js', '../bitrix/js/main/core/core_ls.js', '../bitrix/js/main/session.js', '../bitrix/js/main/core/core_window.js', '../bitrix/js/main/core/core_popup.js', '../bitrix/js/main/core/core_date.js', '../bitrix/js/main/utils.js', '../js/all_template.js', '../bitrix/templates/rtds-renault/js/jquery.bxslider.js', '../bitrix/templates/rtds-renault/js/main.js', '../bitrix/templates/.default/js/jquery-ui-accordion.min.js', '../bitrix/templates/.default/js/runAccordion.js', '../js/in-form.js', '../bitrix/templates/.default/js/jquery.slotmachine.min.js', '../bitrix/templates/.default/js/jquery.colorbox-min.js', '../bitrix/templates/.default/js/runColorbox.js', '../bitrix/templates/.default/js/jquery.fancybox.pack.js', '../js/main.js', '../bitrix/templates/.default/components/bitrix/menu/rtds-horizontal/script.js', '../bitrix/templates/rtds-renault/components/bitrix/form/carorder_small/bitrix/form.result.new/.default/script.js', '/js/mask/masked.js']); </script>
-    <script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css', '../bitrix/js/main/core/css/core_popup.css', '../bitrix/js/main/core/css/core_date.css', '../bitrix/templates/rtds-renault/components/bitrix/news.line/line_left/style.css', '../bitrix/templates/rtds-renault/components/bitrix/news.line/.default/style.css', '../bitrix/templates/.default/css/main.min.css', '../bitrix/templates/.default/css/jquery.fancybox.css', '../bitrix/templates/.default/css/jquery.bxslider.min.css', '../bitrix/templates/.default/css/colorbox.css', '../bitrix/templates/.default/components/bitrix/menu/rtds-horizontal/style.css', '../bitrix/templates/rtds-renault/components/bitrix/menu/leftmenu/style.css', '../bitrix/templates/rtds-renault/styles.css', '../bitrix/templates/rtds-renault/template_styles.css', '../bitrix/templates/rtds-renault/components/bitrix/form/service/bitrix/form.result.new/.default/style.css', '../bitrix/templates/.default/components/bitrix/form/service3/bitrix/form.result.new/.default/style.css', '../bitrix/templates/.default/components/bitrix/form/new_auto2/bitrix/form.result.new/.default/style.css', '../bitrix/templates/.default/components/bitrix/form/credit3/bitrix/form.result.new/.default/style.css', '../bitrix/templates/.default/components/bitrix/form/obmen/bitrix/form.result.new/.default/style.css', '/bitrix/templates/rtds-renault/components/bitrix/form/carorder_small/bitrix/form.result.new/.default/style.css']); </script>
+    <script type="text/javascript">
+        BX.setJSList(['/bitrix/js/main/core/core.js', '../bitrix/js/main/core/core_ajax.js',
+            '../bitrix/js/main/json/json2.min.js', '../bitrix/js/main/core/core_ls.js',
+            '../bitrix/js/main/session.js', '../bitrix/js/main/core/core_window.js',
+            '../bitrix/js/main/core/core_popup.js', '../bitrix/js/main/core/core_date.js',
+            '../bitrix/js/main/utils.js', '../js/all_template.js',
+            '../bitrix/templates/rtds-renault/js/jquery.bxslider.js',
+            '../bitrix/templates/rtds-renault/js/main.js',
+            '../bitrix/templates/.default/js/jquery-ui-accordion.min.js',
+            '../bitrix/templates/.default/js/runAccordion.js', '../js/in-form.js',
+            '../bitrix/templates/.default/js/jquery.slotmachine.min.js',
+            '../bitrix/templates/.default/js/jquery.colorbox-min.js',
+            '../bitrix/templates/.default/js/runColorbox.js',
+            '../bitrix/templates/.default/js/jquery.fancybox.pack.js', '../js/main.js',
+            '../bitrix/templates/.default/components/bitrix/menu/rtds-horizontal/script.js',
+            '../bitrix/templates/rtds-renault/components/bitrix/form/carorder_small/bitrix/form.result.new/.default/script.js',
+            '/js/mask/masked.js'
+        ]);
+    </script>
+    <script type="text/javascript">
+        BX.setCSSList(['/bitrix/js/main/core/css/core.css', '../bitrix/js/main/core/css/core_popup.css',
+            '../bitrix/js/main/core/css/core_date.css',
+            '../bitrix/templates/rtds-renault/components/bitrix/news.line/line_left/style.css',
+            '../bitrix/templates/rtds-renault/components/bitrix/news.line/.default/style.css',
+            '../bitrix/templates/.default/css/main.min.css',
+            '../bitrix/templates/.default/css/jquery.fancybox.css',
+            '../bitrix/templates/.default/css/jquery.bxslider.min.css',
+            '../bitrix/templates/.default/css/colorbox.css',
+            '../bitrix/templates/.default/components/bitrix/menu/rtds-horizontal/style.css',
+            '../bitrix/templates/rtds-renault/components/bitrix/menu/leftmenu/style.css',
+            '../bitrix/templates/rtds-renault/styles.css',
+            '../bitrix/templates/rtds-renault/template_styles.css',
+            '../bitrix/templates/rtds-renault/components/bitrix/form/service/bitrix/form.result.new/.default/style.css',
+            '../bitrix/templates/.default/components/bitrix/form/service3/bitrix/form.result.new/.default/style.css',
+            '../bitrix/templates/.default/components/bitrix/form/new_auto2/bitrix/form.result.new/.default/style.css',
+            '../bitrix/templates/.default/components/bitrix/form/credit3/bitrix/form.result.new/.default/style.css',
+            '../bitrix/templates/.default/components/bitrix/form/obmen/bitrix/form.result.new/.default/style.css',
+            '/bitrix/templates/rtds-renault/components/bitrix/form/carorder_small/bitrix/form.result.new/.default/style.css'
+        ]);
+    </script>
     <script async src="../../propos.in/js/carwidget.js"></script>
 
 
 
     <script type="text/javascript" src="../bitrix/cache/js/s1/rtds-renault/template_f59e24de3e5d34e3e06537205d138715/template_f59e24de3e5d34e3e06537205d138715f1ca.js?1524485829214472"></script>
     <script type="text/javascript" src="../bitrix/cache/js/s1/rtds-renault/default_63695e13a207b64e9a48ac252ab41295/default_63695e13a207b64e9a48ac252ab41295e868.js?152448582922006"></script>
-    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "6789b501771769071122f03e8f7cbbb4"]); _ba.push(["host", "www.rtds.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
-    <script>new Image().src = 'https://volvo.rtds.ru/bitrix/spread.php?s=QklUUklYX1NNX0dVRVNUX0lEATM1NTcxOTUBMTU1NjQ1MDQwOQEvAQEBAkJJVFJJWF9TTV9MQVNUX1ZJU0lUATAzLjA1LjIwMTggMTQ6MjA6MDkBMTU1NjQ1MDQwOQEvAQEBAg%3D%3D&amp;k=16d36e1fb3eea0131ba98e9a853e466b';
+    <script type="text/javascript">
+        var _ba = _ba || [];
+        _ba.push(["aid", "6789b501771769071122f03e8f7cbbb4"]);
+        _ba.push(["host", "www.rtds.ru"]);
+        (function () {
+            var ba = document.createElement("script");
+            ba.type = "text/javascript";
+            ba.async = true;
+            ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ba, s);
+        })();
+    </script>
+    <script>
+        new Image().src =
+            'https://volvo.rtds.ru/bitrix/spread.php?s=QklUUklYX1NNX0dVRVNUX0lEATM1NTcxOTUBMTU1NjQ1MDQwOQEvAQEBAkJJVFJJWF9TTV9MQVNUX1ZJU0lUATAzLjA1LjIwMTggMTQ6MjA6MDkBMTU1NjQ1MDQwOQEvAQEBAg%3D%3D&amp;k=16d36e1fb3eea0131ba98e9a853e466b';
     </script>
 
 
 
     <script type="text/javascript">
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             '../../connect.facebook.net/en_US/fbevents.js');
         fbq('init', '816888691784483');
         fbq('track', 'PageView');
     </script>
-    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-219548-9NI4M';</script>
+    <script type="text/javascript">
+        (window.Image ? (new Image()) : document.createElement('img')).src =
+            'https://vk.com/rtrg?p=VK-RTRG-219548-9NI4M';
+    </script>
 
     <script type="text/javascript">
         var _tmr = window._tmr || (window._tmr = []);
-        _tmr.push({ id: "3012581", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID" });
+        _tmr.push({
+            id: "3012581",
+            type: "pageView",
+            start: (new Date()).getTime(),
+            pid: "USER_ID"
+        });
         (function (d, w, id) {
             if (d.getElementById(id)) return;
-            var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+            var ts = d.createElement("script");
+            ts.type = "text/javascript";
+            ts.async = true;
+            ts.id = id;
             ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
-            var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
-            if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+            var f = function () {
+                var s = d.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ts, s);
+            };
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
         })(document, window, "topmailru-code");
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-9473487-1', 'auto');
@@ -2572,19 +2770,23 @@
                         webvisor: true,
                         ecommerce: "dataLayer"
                     });
-                } catch (e) { }
+                } catch (e) {}
             });
 
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
             s.type = "text/javascript";
             s.async = true;
             s.src = "../../mc.yandex.ru/metrika/watch.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+            } else {
+                f();
+            }
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <script async type="text/javascript">
@@ -2598,19 +2800,23 @@
                         accurateTrackBounce: true,
                         webvisor: true
                     });
-                } catch (e) { }
+                } catch (e) {}
             });
 
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
             s.type = "text/javascript";
             s.async = true;
             s.src = "../../mc.yandex.ru/metrika/watch.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+            } else {
+                f();
+            }
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <script async type="text/javascript">
@@ -2624,15 +2830,17 @@
             t.src = '//cs15.liv' + 'etex.ru/js/c' + 'lient.js';
             var c = document['getElem' + 'entsByTag' + 'Name']('script')[0];
             if (c) c['paren' + 'tNod' + 'e']['insert' + 'Befo' + 're'](t, c);
-            else document['documen' + 'tEleme' + 'nt']['fi' + 'rstC' + 'hild']['appe' + 'n' + 'dC' + 'h' + 'il' + 'd'](t);
+            else document['documen' + 'tEleme' + 'nt']['fi' + 'rstC' + 'hild']['appe' + 'n' + 'dC' + 'h' + 'il' +
+                'd'
+            ](t);
         })();
     </script>
     <script async type="text/javascript">
-
         (function ($) {
             $.fn.replaceText = function (b, a, c) {
                 return this.each(function () {
-                    var f = this.firstChild, g, e, d = [];
+                    var f = this.firstChild,
+                        g, e, d = [];
                     if (f) {
                         do {
                             if (f.nodeType === 3) {
@@ -2661,7 +2869,6 @@
             $("body *").replaceText(/79.00.11/gi, "<span class='rtds_call_phone_0011'>79-00-11</span>");
 
         });
-
     </script>
 
 
@@ -2669,12 +2876,16 @@
         var RndNum4NoCash = Math.round(Math.random() * 1000000000);
         var ar_Tail = 'unknown';
         if (document.referrer) ar_Tail = escape(document.referrer);
-        document.write('<img src="' + ('https:' == document.location.protocol ? 'https:' : 'http:') + '//ad.adriver.ru/cgi-bin/rle.cgi?' + 'sid=193200&bt=21&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail + '" border=0 width=1 height=1 style="position:absolute;">')
+        document.write('<img src="' + ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//ad.adriver.ru/cgi-bin/rle.cgi?' + 'sid=193200&bt=21&pz=0&rnd=' + RndNum4NoCash + '&tail256=' +
+            ar_Tail + '" border=0 width=1 height=1 style="position:absolute;">')
     </script>
     <script type="text/javascript">
         function _processform_8BACKi() {
             var obForm = top.BX('bxajaxid_e962fb6834c5ab89ca93dd7d6057b317_8BACKi').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_e962fb6834c5ab89ca93dd7d6057b317', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_e962fb6834c5ab89ca93dd7d6057b317', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
         }
         if (top.BX('bxajaxid_e962fb6834c5ab89ca93dd7d6057b317_8BACKi'))
@@ -2688,16 +2899,14 @@
             var buttom = $(".i_agree_tou_callback").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_callback", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2723,7 +2932,9 @@
     <script type="text/javascript">
         function _processform_Ar8Szp() {
             var obForm = top.BX('bxajaxid_7b5e219fdc294419d61160aed506bb84_Ar8Szp').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_7b5e219fdc294419d61160aed506bb84', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_7b5e219fdc294419d61160aed506bb84', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_Ar8Szp);
         }
         if (top.BX('bxajaxid_7b5e219fdc294419d61160aed506bb84_Ar8Szp'))
@@ -2737,16 +2948,14 @@
             var buttom = $(".i_agree_tou_service").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_service", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2769,15 +2978,19 @@
             $('.TitlePageForm').attr("value", title);
         })
     </script>
-    <script language="JavaScript">< !--
-            jQuery(document).ready(function () {
-                $('#modelname').val('Renault ');
-            });
-//--></script>
+    <script language="JavaScript">
+        < !--
+        jQuery(document).ready(function () {
+            $('#modelname').val('Renault ');
+        });
+        //-->
+    </script>
     <script type="text/javascript">
         function _processform_XrQFCj() {
             var obForm = top.BX('bxajaxid_0132225607e279847acfb47733fe00e5_XrQFCj').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_0132225607e279847acfb47733fe00e5', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_0132225607e279847acfb47733fe00e5', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_XrQFCj);
         }
         if (top.BX('bxajaxid_0132225607e279847acfb47733fe00e5_XrQFCj'))
@@ -2791,16 +3004,14 @@
             var buttom = $(".i_agree_tou_car_order2").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_car_order2", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2817,7 +3028,7 @@
     </script>
     <script>
         $(document).ready(function () {
-            $("#form_dropdown_comment").val();//глобальная определена на индексной модели.
+            $("#form_dropdown_comment").val(); //глобальная определена на индексной модели.
         })
         $(document).ready(function () {
             var title = $('h1').text();
@@ -2832,16 +3043,14 @@
             var buttom = $(".i_agree_tou_credit").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_credit", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2867,7 +3076,9 @@
     <script type="text/javascript">
         function _processform_dCjmSk() {
             var obForm = top.BX('bxajaxid_cf268414f73e46504868370cca2d3fe4_dCjmSk').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_cf268414f73e46504868370cca2d3fe4', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_cf268414f73e46504868370cca2d3fe4', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_dCjmSk);
         }
         if (top.BX('bxajaxid_cf268414f73e46504868370cca2d3fe4_dCjmSk'))
@@ -2881,16 +3092,14 @@
             var buttom = $(".i_agree_tou_assessment").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_assessment", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2913,11 +3122,13 @@
             $('.TitlePageForm').attr("value", title);
         })
     </script>
-    <script language="JavaScript">< !--
-            jQuery(document).ready(function () {
-                $('#modelname').val('Renault ');
-            });
-//--></script>
+    <script language="JavaScript">
+        < !--
+        jQuery(document).ready(function () {
+            $('#modelname').val('Renault ');
+        });
+        //-->
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -2925,16 +3136,14 @@
             var buttom = $(".i_agree_tou_feedback").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_feedback", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -2973,16 +3182,14 @@
             var buttom = $(".i_agree_tou_max_benefits").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_max_benefits", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -3012,7 +3219,9 @@
     <script type="text/javascript">
         function _processform_KurokV() {
             var obForm = top.BX('bxajaxid_ea1cc3812b0a3be0bbdeafe9777f9e10_KurokV').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_ea1cc3812b0a3be0bbdeafe9777f9e10', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_ea1cc3812b0a3be0bbdeafe9777f9e10', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_KurokV);
         }
         if (top.BX('bxajaxid_ea1cc3812b0a3be0bbdeafe9777f9e10_KurokV'))
@@ -3026,16 +3235,14 @@
             var buttom = $(".i_agree_tou_callback_X5X2L").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_callback_X5X2L", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -3061,7 +3268,9 @@
     <script type="text/javascript">
         function _processform_6l2A1U() {
             var obForm = top.BX('bxajaxid_e8cddb9da7683bdfba6daee584311de5_6l2A1U').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_e8cddb9da7683bdfba6daee584311de5', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_e8cddb9da7683bdfba6daee584311de5', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_6l2A1U);
         }
         if (top.BX('bxajaxid_e8cddb9da7683bdfba6daee584311de5_6l2A1U'))
@@ -3075,16 +3284,14 @@
             var buttom = $(".i_agree_tou_callback_X5X2L_St2FY").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_callback_X5X2L_St2FY", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -3110,7 +3317,9 @@
     <script type="text/javascript">
         function _processform_YpNbPI() {
             var obForm = top.BX('bxajaxid_e400874477d0717ac84aa2dfe90edfe2_YpNbPI').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_e400874477d0717ac84aa2dfe90edfe2', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_e400874477d0717ac84aa2dfe90edfe2', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_YpNbPI);
         }
         if (top.BX('bxajaxid_e400874477d0717ac84aa2dfe90edfe2_YpNbPI'))
@@ -3124,16 +3333,14 @@
             var buttom = $(".i_agree_tou_feedback_tjg3T").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_feedback_tjg3T", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -3159,7 +3366,9 @@
     <script type="text/javascript">
         function _processform_Pol3IY() {
             var obForm = top.BX('bxajaxid_bbb5ad898e7df92e1bb8fee12b7fab2d_Pol3IY').form;
-            top.BX.bind(obForm, 'submit', function () { BX.ajax.submitComponentForm(this, 'comp_bbb5ad898e7df92e1bb8fee12b7fab2d', true) });
+            top.BX.bind(obForm, 'submit', function () {
+                BX.ajax.submitComponentForm(this, 'comp_bbb5ad898e7df92e1bb8fee12b7fab2d', true)
+            });
             top.BX.removeCustomEvent('onAjaxSuccess', _processform_Pol3IY);
         }
         if (top.BX('bxajaxid_bbb5ad898e7df92e1bb8fee12b7fab2d_Pol3IY'))
@@ -3173,16 +3382,14 @@
             var buttom = $(".i_agree_tou_feedback_Bgwf8").parents("form").find("input[type=submit]");
             if (checkFind) {
                 buttom.removeAttr("disabled", "disabled");
-            }
-            else {
+            } else {
                 buttom.attr("disabled", "disabled");
             }
             $(document).on("click", ".i_agree_tou_feedback_Bgwf8", function () {
                 var checkFind = $(this).is(":checked");
                 if (checkFind) {
                     buttom.removeAttr("disabled", "disabled");
-                }
-                else {
+                } else {
                     buttom.attr("disabled", "disabled");
                 }
             });
@@ -3206,32 +3413,41 @@
         })
     </script>
     <script type="text/javascript">
-            (function (w, d, e) {
-                var a = 'all', b = 'tou';
-                var src = b + 'c' + 'h';
-                src = 'm' + 'o' + 'd.c' + a + src;
-                var jsHost = (("https:" == d.location.protocol) ? "https://" : "http://") + src;
-                s = d.createElement(e);
-                p = d.getElementsByTagName(e)[0];
-                s.async = 1;
-                s.src = jsHost + "." + "r" + "u/d_client.js?param;ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";";
-                if (!w.jQuery) {
-                    jq = d.createElement(e);
-                    jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js';
-                    p.parentNode.insertBefore(jq, p);
-                }
-                p.parentNode.insertBefore(s, p);
-            }(window, document, 'script'));
+        (function (w, d, e) {
+            var a = 'all',
+                b = 'tou';
+            var src = b + 'c' + 'h';
+            src = 'm' + 'o' + 'd.c' + a + src;
+            var jsHost = (("https:" == d.location.protocol) ? "https://" : "http://") + src;
+            s = d.createElement(e);
+            p = d.getElementsByTagName(e)[0];
+            s.async = 1;
+            s.src = jsHost + "." + "r" + "u/d_client.js?param;ref" + escape(d.referrer) + ";url" + escape(d.URL) +
+                ";cook" + escape(d.cookie) + ";";
+            if (!w.jQuery) {
+                jq = d.createElement(e);
+                jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js';
+                p.parentNode.insertBefore(jq, p);
+            }
+            p.parentNode.insertBefore(s, p);
+        }(window, document, 'script'));
     </script>
     <script type="text/javascript">
         function ct(w, d, e, c) {
-            var a = 'all', b = 'tou', src = b + 'c' + 'h';
+            var a = 'all',
+                b = 'tou',
+                src = b + 'c' + 'h';
             src = 'm' + 'o' + 'd.c' + a + src;
-            var jsHost = "https://" + src, s1 = d.createElement(e), s2 = d.createElement(e), p = d.getElementsByTagName(e)[0];
+            var jsHost = "https://" + src,
+                s1 = d.createElement(e),
+                s2 = d.createElement(e),
+                p = d.getElementsByTagName(e)[0];
             s1.async = 1;
-            s1.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") + "specific_id1;ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";";
+            s1.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") +
+                "specific_id1;ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";";
             s2.async = 1;
-            s2.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") + "specific_id2;ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";";
+            s2.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") +
+                "specific_id2;ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";";
             if (!w.jQuery) {
                 var jq = d.createElement(e);
                 jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js';
@@ -3249,17 +3465,15 @@
         if (!!window.GoogleAnalyticsObject) {
             window[window.GoogleAnalyticsObject](function (tracker) {
                 if (!!window[window.GoogleAnalyticsObject].getAll()[0]) {
-                    ct(window, document, 'script', window[window.GoogleAnalyticsObject].getAll()[0].get('clientId'))
-                }
-                else {
+                    ct(window, document, 'script', window[window.GoogleAnalyticsObject].getAll()[0].get(
+                        'clientId'))
+                } else {
                     ct(window, document, 'script', null);
                 }
             });
         } else {
             ct(window, document, 'script', null);
         }
-
-
     </script>
 
     <script async type="text/javascript" src="http://callkeeper.ru/modules/widget/db/?callkeeper_code=026bfca50833f4d25cb36fd1929750b8"

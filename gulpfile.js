@@ -18,7 +18,7 @@ gulp.task('browser-sync', ['styles'], function () {
 
 gulp.task('styles', function () {
     return gulp.src('src/sass/*.sass')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
             cascade: false

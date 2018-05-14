@@ -9,8 +9,8 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', ['styles'], function () {
     browserSync.init({
         server: {
-            baseDir: "src",
-            index: '/aktsii/actions.html'
+            baseDir: "src/aktsii/",
+            index: 'error404.html'
         },
         notify: false
     });
@@ -28,10 +28,10 @@ gulp.task('styles', function () {
 });
 
 gulp.task('inject', function () {
-    return gulp.src('src/aktsii/index.html')
+    return gulp.src('src/aktsii/index-empty.html')
         .pipe(rigger())
         .pipe(rename(function (path) {
-            path.basename = 'actions';
+            path.basename = 'error404';
         }))
         .pipe(gulp.dest('src/aktsii/'))
         .pipe(browserSync.stream());

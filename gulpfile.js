@@ -28,7 +28,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('inject', function () {
-    return gulp.src('src/aktsii/index-empty.html')
+    return gulp.src('src/aktsii/index-404.html')
         .pipe(rigger())
         .pipe(rename(function (path) {
             path.basename = 'error404';

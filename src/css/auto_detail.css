@@ -1,0 +1,140 @@
+.auto-detail h1,
+.auto-detail .other-models {
+  font-size: 26px;
+}
+
+.auto-detail .bundling {
+  display: block;
+  max-width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ffcd00;
+  padding: 12px 20px;
+  margin: 0 0 40px;
+}
+
+.auto-detail .bundling span {
+  font-size: 14px;
+  font-family: "RenaultLife-Bold";
+  color: #000000;
+  text-transform: uppercase;
+  margin-right: 27px;
+}
+
+.auto-detail .bundling a {
+  display: inline-block;
+  font-size: 14px;
+  color: #989898;
+  border-bottom: 1px solid #989898;
+  margin-right: 27px;
+}
+
+.auto-detail .stock-detail {
+  background: url("../img/auto-detail.png") left -50px center no-repeat;
+  -webkit-background-size: 55% 55%;
+  background-size: 55%;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 40px;
+}
+
+.auto-detail .stock-right {
+  width: 505px;
+}
+
+.auto-detail .stock-right table {
+  border: 1px solid #e8e8e8;
+  margin-bottom: 35px;
+}
+
+.auto-detail .stock-right table thead tr td {
+  font-size: 17px;
+  font-family: "RenaultLife-Bold";
+  color: #565656;
+  text-transform: none;
+  background-color: #e8e8e8;
+  padding: 14px 0;
+}
+
+.auto-detail .stock-right table tbody tr td:first-child {
+  width: 180px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.auto-detail .stock-right table tbody tr td {
+  font-size: 14px;
+  color: #636363;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 20px;
+}
+
+.auto-detail .stock-right table tbody tr:nth-of-type(2n + 1) td {
+  background-color: #f8f8f8;
+}
+
+.auto-detail .stock-right table tbody tr:nth-of-type(2n) td {
+  background-color: #ffffff;
+}
+
+.auto-detail .stock-right table tbody tr:last-child td {
+  text-align: left;
+  border-bottom: none;
+}
+
+.auto-detail .stock-right table tbody tr:last-child td:last-child {
+  font-weight: normal;
+}
+
+.stock-right__add-block .price {
+  margin-bottom: 20px;
+}
+
+.stock-right__add-block .price__list {
+  display: inline-block;
+}
+
+.stock-right__add-block .price__list p {
+  margin: 0;
+}
+
+.stock-right__add-block .price__list p span {
+  font-family: "RenaultLife-Bold";
+}
+
+.stock-right__add-block .price__get-price,
+.stock-right__add-block .more-info {
+  float: right;
+}
+
+.stock-right__add-block .more-info {
+  display: inline-block;
+  clear: both;
+}
+
+.stock-right__add-block .price__get-price {
+  font-size: 14px;
+  font-weight: normal;
+  color: #000000;
+  width: 254px;
+  line-height: 43px;
+  text-align: left;
+  border: none;
+  padding: 0 30px;
+}
+
+.stock-right__add-block .old-price {
+  font-size: 14px;
+  color: #9f9f9f;
+  text-decoration: line-through;
+}
+
+.stock-right__add-block .new-price {
+  font-size: 23px;
+  color: #ff0101;
+}
+
+.stock-right__add-block .more-info {
+  font-size: 14px;
+  color: #000000;
+  background: url("../img/right-dbl-arrow.png") center right no-repeat;
+  text-decoration: none;
+  padding-right: 15px;
+}

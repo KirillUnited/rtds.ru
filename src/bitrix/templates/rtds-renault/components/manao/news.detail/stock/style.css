@@ -1,0 +1,142 @@
+
+.stock-detail {
+	margin-bottom: 20px;
+}
+
+.stock-left {
+	float: left;
+	width: 618px;
+	text-align: center;
+}
+
+.stock-left img {
+	vertical-align: middle;
+
+}
+
+.stock-right {
+	float: right;
+	width: 325px;
+}
+
+.stock-right table {
+	width: 100%;
+	font-size: 12px;
+	border-spacing: 0;
+}
+
+.stock-right table thead tr td {
+	background-color: #ffcd00;
+	text-align: center;
+	text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.stock-right table tbody tr td{
+	background-color: #cccccc;
+	border-bottom: 1px solid #ffffff;
+}
+
+.stock-right table tbody tr td:first-child {
+	padding: 4px 0 4px 17px;
+	font-weight: bold;
+}
+
+.stock-right table tbody tr td span {
+	font-weight: bold;
+}
+
+.other-models {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+.modal_window {
+	display: inline-block;
+    background-color: #ffcc21;
+    border: 1px solid #000000;
+    text-decoration: none;
+    padding: 4px 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.modelElement{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.stock-right table p.old-price {
+	display: inline-block;
+    line-height: 100%;
+    margin: 0;
+    background: url(img/lines.png) no-repeat center center;
+}
+
+.stock-right table tbody tr:last-child td {
+	padding: 20px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.not-stock-text{
+
+}
+
+.not-stock-text span{
+	color: #E22B2B;
+	display: inline-block;
+	text-align: left;
+}
+
+.related-stock .bundling, .related-stock .related-car{
+	display: inline-block;
+	margin: 0 30px 30px 0;
+	vertical-align: top;
+}
+
+.related-stock .bundling a{
+	display: block;
+	text-decoration: none;
+	color: grey;
+}
+
+/*02.05.2018 */
+.bundling {
+	max-width: 150px;
+}
+
+.b-similar-auto {
+	width: 510px;
+	display: inline-block;
+}
+
+.content.content-np .b-similar-auto p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.similar-auto_item {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 2%;
+	text-decoration: none;
+	margin-bottom: 20px;
+	word-wrap: break-word;
+	vertical-align: top;
+}
+
+.similar-auto_item  span {
+	display: block;
+}
+
+.similar-auto_item img{
+	height: 120px;
+	width: auto;
+}
+/*02.05.2018 end*/

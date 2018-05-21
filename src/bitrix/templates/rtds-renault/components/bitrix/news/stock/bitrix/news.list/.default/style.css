@@ -1,0 +1,76 @@
+.stock{
+	width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    font-size: 14px;
+	font-weight: 500;}
+
+.stock thead{
+	background-color: #cccccc;}
+
+.stock thead tr td{
+	padding: 2px 0;}
+
+.stock tbody tr a{
+	//cursor: pointer;
+	text-decoration: none;}
+
+.stock tbody tr td{
+	border-bottom: 2px solid #eae9e8;}
+
+.stock tbody tr td:last-child a{
+	color: #ef8901;}
+
+.stock tbody tr td:first-child{
+	border-left: 5px solid #ffffff;}
+
+.stock tbody tr:hover td:first-child{
+	border-left: 5px solid #ffcd00;}
+
+.filter-city{
+	margin-bottom: 20px;}
+
+.filter-city a{
+	text-decoration: none;
+	margin-left: 10px;}
+
+.filter-city .active {
+	background: none;
+	color: #ef8901;}
+
+#mark{
+	width:470px !important;}
+
+#mod{
+	width:470px !important;
+	margin-left: 20px;}
+
+.main-filter{
+	margin-bottom: 15px;}
+
+.zach{
+    text-decoration: line-through !important;
+	color: black !important;}
+/* background: url(/bitrix/templates/rtds-renault/components/bitrix/news/stock/bitrix/news.detail/.default/img/lines.png) no-repeat center center; */
+    
+.but_stock{
+    padding: 3px;
+	background: #f3ecd3;
+	border: 1px solid #f6a600;
+	border-radius: 4px;
+	color: black !important;}
+    
+.but_stock:hover{
+	background: #ffcd00;}
+
+a.list-stock{
+	text-decoration: none;
+	color: #f7b100;
+	display: inline-block;
+	margin: 10px;
+}
+
+.stock td:not(.stock-not-link){
+	cursor: pointer;
+}
+

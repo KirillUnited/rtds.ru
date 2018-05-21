@@ -9,8 +9,7 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', ['styles'], function () {
     browserSync.init({
         server: {
-            baseDir: "src/aktsii/",
-            index: 'error404.html'
+            baseDir: "src/stock/sandero/45780/"
         },
         notify: false
     });
@@ -50,10 +49,10 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', function () {
-    var buildHtml = gulp.src(['!src/aktsii/index.html', 'src/aktsii/*'])
-        .pipe(gulp.dest('build/aktsii'));
+    var buildHtml = gulp.src('src/stock/**/*')
+        .pipe(gulp.dest('build/stock'));
 
-    var buildCss = gulp.src('src/css/*')
+    var buildCss = gulp.src('src/css/auto_detail.css')
         .pipe(gulp.dest('build/css'));
 
     var buildJs = gulp.src('src/js/*')
@@ -75,9 +74,9 @@ gulp.task('build', function () {
         .pipe(gulp.dest('build/upload'));
 });
 
-gulp.task('watch', ['browser-sync', 'inject'], function () {
+gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('src/sass/*.sass', ['styles']);
-    gulp.watch('src/template/*.html', ['inject']);
+    // gulp.watch('src/template/*.html', ['inject']);
     gulp.watch('src/**/*.js').on("change", browserSync.reload);
     gulp.watch('src/**/*.html').on('change', browserSync.reload);
 });

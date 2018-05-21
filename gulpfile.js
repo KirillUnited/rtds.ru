@@ -52,7 +52,7 @@ gulp.task('build', function () {
     var buildHtml = gulp.src('src/stock/**/*')
         .pipe(gulp.dest('build/stock'));
 
-    var buildCss = gulp.src('src/css/auto_detail.css')
+    var buildCss = gulp.src('src/css/*')
         .pipe(gulp.dest('build/css'));
 
     var buildJs = gulp.src('src/js/*')

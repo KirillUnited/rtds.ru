@@ -36,9 +36,13 @@
 }
 
 .auto-detail .stock-left {
-  position: absolute;
-  left: -105px;
+  width: -webkit-calc(100% - 535px);
+  width: calc(100% - 535px);
   overflow: hidden;
+}
+
+.auto-detail .stock-left img {
+  width: 100%;
 }
 
 .auto-detail .stock-right {

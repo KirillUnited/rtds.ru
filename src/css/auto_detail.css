@@ -29,14 +29,20 @@
 }
 
 .auto-detail .stock-detail {
-  background: url("../img/auto-detail.png") left -50px center no-repeat;
-  -webkit-background-size: 55% 55%;
-  background-size: 55%;
+  position: relative;
   border-bottom: 1px solid #d0d0d0;
   padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.auto-detail .stock-left {
+  position: absolute;
+  left: -105px;
+  overflow: hidden;
 }
 
 .auto-detail .stock-right {
+  position: relative;
   width: 505px;
 }
 

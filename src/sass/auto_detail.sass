@@ -31,12 +31,19 @@ $color-txt-grey: #989898
             border-bottom: 1px solid $color-txt-grey
             margin-right: 27px
     .stock-detail
-        background: url('../img/auto-detail.png') left -50px center no-repeat
-        background-size: 55%
+        position: relative
+        // background: url('../img/auto-detail.png') left -50px center no-repeat
+        // background-size: 55%
         border-bottom: 1px solid rgb(208, 208, 208)
         padding:
             bottom: 40px
+        overflow: hidden
+    .stock-left
+        position: absolute
+        left: -105px
+        overflow: hidden
     .stock-right
+        position: relative
         width: 505px
     .stock-right table
         border: 1px solid $color-grey

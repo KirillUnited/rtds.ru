@@ -67,12 +67,13 @@
 }
 
 .popup__service .content__title p span {
-  font-weight: bold;
+  font-family: "RenaultLife-Bold";
 }
 
 .popup__service .content__title > span {
   display: inline-block;
   font-size: 18px;
+  color: #303030;
   line-height: 42px;
   background-color: #ffcd00;
   padding: 0 20px;

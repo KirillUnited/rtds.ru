@@ -17,7 +17,9 @@ gulp.task('browser-sync', ['styles'], function () {
 
 gulp.task('styles', function () {
     return gulp.src('src/sass/*.sass')
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
             cascade: false
@@ -72,6 +74,9 @@ gulp.task('build', function () {
 
     var buildFiles = gulp.src('src/upload/**/*')
         .pipe(gulp.dest('build/upload'));
+
+    var buildFonts = gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('watch', ['browser-sync'], function () {

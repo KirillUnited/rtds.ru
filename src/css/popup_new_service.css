@@ -29,7 +29,7 @@
 
 .popup__service {
   position: absolute;
-  width: 730px;
+  width: 800px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -40,7 +40,6 @@
   background-color: #ffffff;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  padding: 35px;
 }
 
 .popup__service .close {
@@ -60,7 +59,7 @@
 .popup__service .head {
   background: url("../img/popup/logo.png") left center no-repeat;
   padding-left: 227px;
-  margin-bottom: 30px;
+  margin: 35px 35px 30px;
 }
 
 .popup__service .head span {
@@ -73,7 +72,7 @@
 
 .popup__service .content {
   background: url("../img/popup/bg.png") bottom center no-repeat;
-  margin-bottom: 15px;
+  margin: 0 35px 15px;
   padding-bottom: 275px;
 }
 
@@ -99,5 +98,5 @@
   font-size: 14px;
   color: #010101;
   padding: 0;
-  margin: 0;
+  margin: 0 35px 35px;
 }
